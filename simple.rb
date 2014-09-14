@@ -154,6 +154,8 @@ end
 array1 = ['a', 'b', 'c', 'd', 'e']
 array2 = %w(0 1 2 3 4 e)
 array3 = array1 - array2
+array1[0] = 'AAA'
+print array1, "\n"
 print array3, "\n"
 puts array1.include?('d')
 puts array2.join(',')
