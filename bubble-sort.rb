@@ -4,10 +4,10 @@ def max( unsorted_array )
   fail TypeError, 'Argument must be a Array' unless unsorted_array.is_a?(Array)
   max = nil
 
+  return unsorted_array[0] if unsorted_array.length == 1
+
   unsorted_array.each_with_index {
     |value, index|
-
-    return unsorted_array[0] if unsorted_array.length == 1
 
     next_value = unsorted_array[index + 1]
 
